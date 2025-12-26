@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KrispyToes Studio</title>
+  <meta name="description" content="KrispyToes Studio — Horror games built on dread, silence, and systems that fail." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f2f2f0;
+      --ink:#121212;
+      --muted:#4a4a4a;
+      --card:#ffffff;
+      --line:#d7d7d2;
+      --accent:#7c0d12;
+      --shadow: 0 12px 30px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:0 auto;padding:32px 18px 60px}
+    .top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.6);backdrop-filter: blur(6px)}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:44px;height:44px;border-radius:10px;object-fit:cover;border:1px solid var(--line)}
+    .brand b{font-weight:800;letter-spacing:.2px}
+    .nav{display:flex;gap:12px;font-size:14px;color:var(--muted)}
+    .nav a{opacity:.9;text-decoration:none}
+    .nav a:hover{opacity:1;text-decoration:underline}
+    .hero{padding:56px 8px 20px}
+    .hero h1{font-size:44px;line-height:1.05;margin:0 0 10px;font-weight:800}
+    .hero p{max-width:720px;margin:0 0 18px;color:var(--muted);font-size:16px;line-height:1.6}
+    .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card);text-decoration:none;font-weight:600;font-size:14px;box-shadow:0 6px 14px rgba(0,0,0,.06)}
+    .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+    .btn:hover{transform:translateY(-1px)}
+    .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;margin-top:14px}
+    @media (max-width:860px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+    .card h2{margin:0 0 8px;font-size:18px}
+    .kicker{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.14em}
+    ul{margin:10px 0 0 18px;color:var(--muted);line-height:1.6}
+    .footer{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <img src="logo.jpg" alt="KrispyToes Studio logo">
+        <div>
+          <div><b>KrispyToes Studio</b></div>
+          <div style="font-size:12px;color:var(--muted)">Horror Game Studio</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#project">Project</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="tag">Procedural dread • grounded realism • no cheap stingers</span>
+      <h1>Horror that listens back.</h1>
+      <p>
+        KrispyToes Studio builds suspense-first horror games grounded in realism—where systems fail,
+        silence grows teeth, and every interaction teaches you something’s wrong.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#">Wishlist LastCallOperator</a>
+        <a class="btn" href="#">Press / Creator Kit</a>
+      </div>
+      <p style="margin-top:14px;font-size:13px;color:var(--muted)">
+        (Links can stay placeholders until your Steam page + kit are ready.)
+      </p>
+    </section>
+
+    <section class="grid" id="project">
+      <div class="card">
+        <div class="kicker">Current Project</div>
+        <h2>LastCallOperator</h2>
+        <p style="margin:0;color:var(--muted);line-height:1.6">
+          A UI-only dispatcher horror game where you take calls, choose <b>ASK / DISPATCH / END</b>,
+          manage <b>PRESENCE</b>, and survive the shift—until the signal breaks.
+        </p>
+        <ul>
+          <li>7–10 minute runs</li>
+          <li>40 calls per shift</li>
+          <li>Multiple endings</li>
+          <li>No gore. No jump scares. Just creeping wrongness.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="kicker">Status</div>
+        <h2>In development</h2>
+        <p style="margin:0;color:var(--muted);line-height:1.6">
+          Core gameplay is playable end-to-end. Next up: audio pipeline lock-in, VO completion, tuning,
+          demo readiness.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid" style="margin-top:14px" id="about">
+      <div class="card">
+        <div class="kicker">About</div>
+        <h2>Connected horror universe</h2>
+        <p style="margin:0;color:var(--muted);line-height:1.6">
+          This is the first entry in a larger horror universe told piece by piece across different game genres.
+          Each release stands on its own—and adds to the canon.
+        </p>
+      </div>
+
+      <div class="card" id="contact">
+        <div class="kicker">Contact</div>
+        <h2>For players & creators</h2>
+        <p style="margin:0;color:var(--muted);line-height:1.6">
+          Email: <a href="mailto:contact@krispytoes.studio">contact@krispytoes.studio</a><br>
+          Creators: request a demo key + press kit.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © <span id="y"></span> KrispyToes Studio • Built for Steam
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
